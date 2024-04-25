@@ -1762,7 +1762,7 @@
 
 .text-primary {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important
+    color: var(--bs-primary-rgb) !important
 }
 
 .text-secondary {
@@ -6173,7 +6173,7 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #2d2a26;
-    --bs-primary-rgb: 185, 36, 84;
+    --bs-primary-rgb: #ffc107;
     --bs-secondary-rgb: 177, 179, 179;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
@@ -23154,7 +23154,8 @@ button {
 
 .home-spotlight .home-spotlight-image-wrapper .home-spotlight-vehicle .home-spotlight-vehicle-image {
     height: 100%;
-    width: 100%
+    width: 100%;
+    object-fit: cover;
 }
 
 .home-spotlight .home-spotlight-content-wrapper {
@@ -23168,7 +23169,7 @@ button {
 
 .home-spotlight .home-spotlight-content-wrapper .home-spotlight-content {
     align-items: flex-end;
-    background-image: url(../images/heart.svg);
+    background-image: url(../images/bg.jpeg);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -23581,7 +23582,7 @@ button {
 }
 
 .package-spotlight-item .package-spotlight-item-body .package-spotlight-usp-list .package-spotlight-usp-list-item:before {
-    content: url(../images/list-icon.svg);
+    content: url(../images/list-icon-yellow.svg);
     display: inline-block;
     height: 30px;
     margin-right: 1rem;
