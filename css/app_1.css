@@ -22980,8 +22980,8 @@ button {
     perspective: 800px;
     pointer-events: all;
     position: relative;
-    width: 200px;
-    margin-top: 20px;
+    width: 85px;
+    margin-top: 50px;
 }
 
 .navigation .logo-wrapper .logo {
