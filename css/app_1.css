@@ -23077,14 +23077,14 @@ button {
 
 @media (max-width:991.98px) {
     .navigation .logo-wrapper {
-        height: 155px;
-        top: -113px;
-        width: 100px;
+        height: 129px;
+        top: -75px;
+        width: 83px;
         left: 15px;
     }
 
     .article-content .content-title {
-        font-size: 22px;
+        font-size: 22px !important;
     }
 
     .navigation .logos-wrapper {
