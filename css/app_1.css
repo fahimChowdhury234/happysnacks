@@ -22980,8 +22980,8 @@ button {
     perspective: 800px;
     pointer-events: all;
     position: relative;
-    width: 120px;
-    margin-top: 110px;
+    width: 240px;
+    margin-top: 305px;
 }
 
 .navigation .logo-wrapper .logo {
@@ -24415,7 +24415,8 @@ button {
     color: #fdad20;
     content: '"';
     font-size: 10rem;
-    position: absolute
+    position: absolute;
+    display: none;
 }
 
 .quote-conversion .quote-wrapper .quote:before {
