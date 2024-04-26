@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @charset "UTF-8";
 
 @font-face {
@@ -91,6 +93,16 @@
     font-weight: 900;
     src: url(../fonts/roboto-v30-latin-900.eot);
     src: url(../fonts/roboto-v30-latin-900.eot#iefix) format("embedded-opentype"), url(../fonts/roboto-v30-latin-900.woff2) format("woff2"), url(../fonts/roboto-v30-latin-900.woff) format("woff"), url(../fonts/roboto-v30-latin-900.ttf) format("truetype"), url(../images/roboto-v30-latin-900.svg#Roboto) format("svg")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CindieMono;
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/CindieMono-D.otf);
+    src: url(../fonts/CindieMono-D.otf) format("embedded-opentype");
+    /* Specifies the font file format */
 }
 
 .clearfix:after {
@@ -21715,7 +21727,9 @@ fieldset:disabled .btn {
 .quote-conversion .quote-wrapper .quote:before,
 .spotlight .spotlight-title-wrapper,
 .title-primary {
-    font-family: Hillstown Sans Aged, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    /* font-family: Hillstown Sans Aged, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji */
 }
 
 .article-content blockquote,
@@ -22980,8 +22994,8 @@ button {
     perspective: 800px;
     pointer-events: all;
     position: relative;
-    width: 240px;
-    margin-top: 305px;
+    width: 180px;
+    margin-top: 205px;
 }
 
 .navigation .logo-wrapper .logo {
@@ -23063,9 +23077,14 @@ button {
 
 @media (max-width:991.98px) {
     .navigation .logo-wrapper {
-        height: 167px;
-        top: -25px;
-        width: 150px
+        height: 155px;
+        top: -113px;
+        width: 100px;
+        left: 15px;
+    }
+
+    .article-content .content-title {
+        font-size: 22px;
     }
 
     .navigation .logos-wrapper {
@@ -23183,7 +23202,8 @@ button {
 
 .home-spotlight .home-spotlight-content-wrapper .home-spotlight-content .home-spotlight-title {
     color: #fff;
-    font-size: 3.75rem
+    font-size: 3.75rem;
+    font-weight: 700;
 }
 
 .home-spotlight .home-spotlight-content-wrapper .home-spotlight-content #home-spotlight-slider {
@@ -23300,7 +23320,8 @@ button {
 
 .spotlight .spotlight-title-wrapper .spotlight-title .title {
     color: #fff;
-    text-shadow: 0 0 8px #fdad20
+    text-shadow: 0 0 8px #fdad20;
+    font-weight: 700;
 }
 
 .spotlight .spotlight-title-wrapper .spotlight-title .text-primary {
@@ -23457,7 +23478,8 @@ button {
 }
 
 .package-card .package-inner .package-title {
-    margin-bottom: 0
+    margin-bottom: 0;
+    font-weight: 700;
 }
 
 .package-card .package-inner .package-subtitle {
@@ -24579,7 +24601,7 @@ button {
 
 .contact-information-block .contact-information-block-body .contact-list .big-text {
     color: #fdad20;
-    font-size: 3.125rem;
+    font-size: 34px;
     margin: 1rem 0 2rem
 }
 
