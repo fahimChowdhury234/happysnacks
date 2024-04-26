@@ -23351,6 +23351,10 @@ button {
 .package-wrapper,
 .packages-wrapper {
     background: #000;
+    background-image: url(../images/bg.jpeg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-bottom: 5rem;
     position: relative;
     z-index: 2
@@ -23360,6 +23364,7 @@ button {
 .package-wrapper:before,
 .packages-wrapper:after,
 .packages-wrapper:before {
+
     background: #000;
     content: "";
     height: 100px;
