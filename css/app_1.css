@@ -23111,7 +23111,7 @@ button {
     }
 }
 
-@media (min-width:300px) {
+@media (max-width:300px) {
     .spotlight .spotlight-title-wrapper .spotlight-title .title {
         font-size: 20px !important;
     }
