@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
-   <!--
-     __   __        ___  __   ___  __      __          ___                __
-    |__) /  \ |  | |__  |__) |__  |  \    |__) \ /    |__   |\/| | \_/ | /  \ |\ |  |\ | |
-    |    \__/ |/\| |___ |  \ |___ |__/    |__)  |     |___  |  | | / \ | \__/ | \| .| \| |___
-
-    --><head>
+   <head>
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,6 +25,7 @@
       <script type="text/javascript" src="js/cookie-dialog.js"></script>
       <link rel="stylesheet" href="css/cookie-dialog.css" />
    </head>
+
    <body class="black-bg">
       <div class="navigation">
          <div class="container">
@@ -37,8 +33,8 @@
                <div class="col-auto col-md-auto col-lg-auto col-xl-auto me-auto">
                   <div class="logos-wrapper">
                      <a class="logo-wrapper" href="./index.html">
-                        <picture
-                           ><source srcset="./images/3d_glass-window_logo_mockup_File-removebg-preview.png" type="image/webp" />
+                        <picture>
+                           <source srcset="./images/3d_glass-window_logo_mockup_File-removebg-preview.png" type="image/webp" />
                            <img
                               srcset="./images/3d_glass-window_logo_mockup_File-removebg-preview.png"
                               sizes="(max-width: 700px) 100vw, 50vw"
@@ -46,7 +42,8 @@
                               alt="logo-with-board"
                               class="logo"
                               loading="lazy"
-                        /></picture>
+                           />
+                        </picture>
                      </a>
                      <div class="old-logo-wrapper">
                         <picture><img src="images/rijdendekeuken-big-58f606fb.svg" alt="voorheen rijdende keuken" class="old-logo old-logo-big" loading="lazy" /></picture>
@@ -100,10 +97,10 @@
                </h2> -->
             </div>
          </div>
-         <picture
-            ><source srcset="./images/7.jpg 640w" type="image/jpg" />
-            <img srcset="images/7.jpg" sizes="(max-width: 700px) 100vw, 50vw" src="images/7.jpg" alt="happysnacks" class="spotlight-image" loading="lazy"
-         /></picture>
+         <picture>
+            <source srcset="./images/7.jpg 640w" type="image/jpg" />
+            <img srcset="images/7.jpg" sizes="(max-width: 700px) 100vw, 50vw" src="images/7.jpg" alt="happysnacks" class="spotlight-image" loading="lazy" />
+         </picture>
       </div>
 
       <main>
@@ -180,12 +177,7 @@
                            <label for="message" class="control-label">Vraag, bericht en/of toelichting</label>
                         </div>
                         <div class="col-12 col-md-12 form-group text-lg-end text-center">
-                           <button
-                              class="btn btn-primary custom-btn btn-lg"
-                              type="submit"
-                              data-recaptcha="81ec4a0ccf62473f887497512700a539_recaptcha"
-                              onclick="validate81ec4a0ccf62473f887497512700a539Form(this, event)"
-                           >
+                           <button class="btn btn-primary custom-btn btn-lg" type="submit">
                               <div class="btn-txt">
                                  <span>Verzenden</span>
                               </div>
@@ -445,7 +437,7 @@
                               <ul class="nav-child">
                                  <li class="nav-item">
                                     <a href="./lekker-snacken.html" class="depth-level-0 nav-link" id="menu-item-9">
-                                       <span class="nav-item-title">Lekker snacken</span>
+                                       <span class="nav-item-title">Happy snacken</span>
                                     </a>
                                  </li>
                                  <li class="nav-item">
@@ -590,7 +582,7 @@
                                     <ul class="nav-child">
                                        <li class="nav-item">
                                           <a href="./lekker-snacken.html" class="depth-level-0 nav-link" id="menu-item-40">
-                                             <span class="nav-item-title">Lekker snacken</span>
+                                             <span class="nav-item-title">Happy snacken</span>
                                           </a>
                                        </li>
                                        <li class="nav-item">
@@ -792,52 +784,82 @@
          }
       </style>
       <script src="js/api.js" async="" defer=""></script>
-      <script type="text/javascript">
-         var OnRecaptchaLoaded = function () {
-            jQuery(".g-recaptcha").each(function (index, element) {
-               var widget_id = grecaptcha.render(element, {
-                  sitekey: jQuery(element).data("sitekey"),
-                  callback: jQuery(element).data("callback"),
-               });
-
-               jQuery(element).data("recaptcha_widget_id", widget_id);
+      <!-- <script type="text/javascript">
+      var OnRecaptchaLoaded = function () {
+         jQuery(".g-recaptcha").each(function (index, element) {
+            var widget_id = grecaptcha.render(element, {
+               sitekey: jQuery(element).data("sitekey"),
+               callback: jQuery(element).data("callback"),
             });
-         };
-      </script>
 
-      <script type="text/javascript">
-         document.getElementById("contactsecurity2").value = -5;
-      </script>
+            jQuery(element).data("recaptcha_widget_id", widget_id);
+         });
+      };
+   </script>
 
-      <script>
-         function validate81ec4a0ccf62473f887497512700a539Form(element, event) {
-            event.preventDefault();
-            jQuery(element).addClass("loading");
-            var parsley = jQuery(element)
-               .parents("form")
-               .parsley({
-                  errorsContainer: function (element) {
-                     if (window.parsleyErrorsContainer) {
-                        return window.parsleyErrorsContainer(element);
-                     }
-                     return element.$element.closest(".form-group");
-                  },
-               });
-            if (parsley) {
-               parsley.validate();
-               if (!parsley.isValid()) {
-                  jQuery(element).removeClass("loading");
-                  return;
-               }
+   <script type="text/javascript">
+      document.getElementById("contactsecurity2").value = -5;
+   </script> -->
+
+      <!-- <script>
+      function validate81ec4a0ccf62473f887497512700a539Form(element, event) {
+         event.preventDefault();
+         jQuery(element).addClass("loading");
+         var parsley = jQuery(element)
+            .parents("form")
+            .parsley({
+               errorsContainer: function (element) {
+                  if (window.parsleyErrorsContainer) {
+                     return window.parsleyErrorsContainer(element);
+                  }
+                  return element.$element.closest(".form-group");
+               },
+            });
+         if (parsley) {
+            parsley.validate();
+            if (!parsley.isValid()) {
+               jQuery(element).removeClass("loading");
+               return;
             }
-            var recaptcha_element = jQuery("#" + jQuery(element).data("recaptcha"));
-            grecaptcha.execute(recaptcha_element.data("recaptcha_widget_id"));
          }
+         var recaptcha_element = jQuery("#" + jQuery(element).data("recaptcha"));
+         grecaptcha.execute(recaptcha_element.data("recaptcha_widget_id"));
+      }
 
-         function on81ec4a0ccf62473f887497512700a539Submit(token) {
-            document.getElementById("81ec4a0ccf62473f887497512700a539").submit();
-         }
-      </script>
+      function on81ec4a0ccf62473f887497512700a539Submit(token) {
+         document.getElementById("81ec4a0ccf62473f887497512700a539").submit();
+      }
+   </script> -->
       <script type="text/javascript" src="js/app.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            var form = document.getElementById("81ec4a0ccf62473f887497512700a539");
+
+            form.addEventListener("submit", function (event) {
+               event.preventDefault(); // Prevent the default form submission
+
+               var xhr = new XMLHttpRequest();
+               xhr.open("POST", "send_email.php", true);
+               xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+               xhr.onreadystatechange = function () {
+                  if (xhr.readyState === XMLHttpRequest.DONE) {
+                     var response = JSON.parse(xhr.responseText);
+                     if (xhr.status === 200 && response.success) {
+                        alert("Your information has been sent successfully! We will contact you soon.");
+                     } else {
+                        alert("There was an error submitting the form: " + (response.message || "Unknown error."));
+                     }
+                  }
+               };
+
+               var formData = new FormData(form);
+               var params = new URLSearchParams(formData).toString();
+
+               xhr.send(params);
+            });
+         });
+      </script>
    </body>
 </html>
